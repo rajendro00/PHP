@@ -25,6 +25,69 @@
 
 $title = "Bangladesh is a very beautiful country. It is a agricultures country";
 $result4 = substr($title, -20, 12);
-echo $result4;
+echo $result4, "<br>";
+
+
+// string
+$x = "Jhon";
+$y = "Hello $x";
+echo $y, "<br>";
+
+// strlen
+echo strlen("Hello world. Hello Bangladesh"),"<br>";
+
+// str_word_count
+echo str_word_count("Bangladesh is a agricultures country"),"<br>";
+
+// strpos
+echo strpos("Hello Bangladesh. Hello !World!", "World!"); 
+echo "<br>";
+$strpos = "Bangladesh Pakistan India Nepal Bhutan USA";
+// var_dump(strpos($strpos, 'India'));
+// var_dump(strpos($strpos, "jkdhfuiwehf"));
+if(strpos($strpos, "jkdhfuiwehf")){
+    echo "match found","<br>";
+}else{
+    echo "match not found","<br>";
+}
+
+$text  = "hello world!";
+$position = strpos($text, 'world');
+// echo $position;
+
+if($position !== false){
+    echo "match found","<br>";
+}else{
+    echo "match not found","<br>";
+}
+
+// Original string
+$string = "Bangladesh India Pakistan Nepal USA Malaysia";
+
+$searchString = ["Bangladesh", "Pakistan", "Malaysia"];
+
+foreach($searchString as $search){
+    $position33 = strpos($string,$search);
+
+    if($position33 !==false){
+        echo "$search position no $position33. <br>";
+    }else{
+        echo "$search is a not found";
+    }
+}
+
+$uropeCounrty = "Italy Swiden Swizerland Englaland Finland Spain Germany Mexico";
+
+$searchUropeCounrty = ["Italy", "Swizerland", "Finland", "Spain", "Mexico"];
+
+foreach($searchUropeCounrty as $search22){
+    $position44 = strpos($uropeCounrty, $search22);
+
+    if($position44 !== false){
+        echo "$search22 position number $position44 .<br>";
+    }else{
+        echo "$search22 is not found.<br>";
+    }
+}
 
  exit;
