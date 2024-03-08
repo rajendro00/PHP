@@ -78,7 +78,7 @@ foreach($searchString as $search){
 
 $uropeCounrty = "Italy Swiden Swizerland Englaland Finland Spain Germany Mexico";
 
-$searchUropeCounrty = ["Italy", "Swizerland", "Finland", "Spain", "Mexico"];
+$searchUropeCounrty = ["Italy", "akhG", "Finland", "Spain", "jhdghu"];
 
 foreach($searchUropeCounrty as $search22){
     $position44 = strpos($uropeCounrty, $search22);
