@@ -90,4 +90,26 @@ foreach($searchUropeCounrty as $search22){
     }
 }
 
+// string upper case
+
+$x21 = "hello World";
+echo strtoupper($x21), "<br>";
+
+// string lower case
+$x22 = "HELLO BANGLADESH";
+echo strtolower($x22), "<br>";
+
+// The PHP strrev() function reverses a string.
+$x23 = "Hello World!";
+echo strrev($x23), "<br>";
+
+// The trim() removes any whitespace from the beginning or the end:
+$x24 = " Hello Bangladesh   ";
+ echo trim($x24);
+
+ $str = "hello World. Hello Bangladesh. Hello India";
+ $arrays = explode( " ", $str, -1);
+  echo "<pre>";
+  print_r($arrays);
+  echo "</pre>";
  exit;
