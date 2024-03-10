@@ -145,5 +145,42 @@ foreach($nameRes as $details2){
         echo "$DETAILSpOSITON is not  . <br>";
     }
 }
+echo "<br>";
+echo "<br>";
+echo "<br>";
+
+echo strlen("hello World!");
+echo "<br>";
+echo str_word_count("hello Bnagladesh");
+echo "<br>";
+echo strpos("hello Bangladesh", "Bangladesh");
+echo "<br>";
+echo strtoupper("hello bangladesh");
+echo "<br>";
+echo strtolower("HELLO BANGLADESH");
+echo "<br>";
+echo strrev("hello World!");
+echo "<br>";
+echo trim(" hello world  ");
+echo "<br>";
+$x444 = "hello Bangladesh. hello world";
+$y444 = explode(" ", $x444);
+
+print_r($y444);
+echo "<br>";
+
+$v = "Rajshahi Dhaka Khulna Barisal Sylet Cumilla Rangpur";
+$vv = ["Rajshahi", "Dhaka", "Khulna", "jkkrg"];
+
+foreach($vv as $ss){
+    $kk = strpos($v, $ss);
+
+    if($kk !== false){
+        echo "$ss position no $kk . <br>";
+    }else{
+        echo "$kk position is not found . <br>";
+    }
+}
+
 
 exit;
