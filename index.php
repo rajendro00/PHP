@@ -107,9 +107,43 @@ echo strrev($x23), "<br>";
 $x24 = " Hello Bangladesh   ";
  echo trim($x24);
 
- $str = "hello World. Hello Bangladesh. Hello India";
- $arrays = explode( " ", $str, -1);
-  echo "<pre>";
-  print_r($arrays);
-  echo "</pre>";
- exit;
+ $str = "Hello World!. Hello Bangladesh. Hello India";
+ $strRES = explode(" ", $str, -3);
+ echo "<pre>";
+ print_r($strRES);
+ echo "</pre>";
+
+//  Concatenate Strings
+$M = "hello";
+$N = "World!";
+$mn1 = $M. $N;
+$mn2 = $M. " " .$N;
+$mn3 = "$M $N";
+echo $mn1 , "<br>";
+
+// php substr
+$sub = "Happy New Year 2024";
+// $subRes = substr($sub, 6, 3);
+// $subRes = substr($sub, 6, -5);
+$subRes = substr($sub, -13, 8);
+echo $subRes, "<br>";
+
+$escap = "We are the so-called \"Vikings\" from the north.";
+echo $escap;
+
+// strpos
+// strpos
+$name31 = "Rajendro Akash Nur Sohel Miraj Saif";
+$nameRes = ["Rajendro", "gkjhg", "Nur", "Miraj" , "jkreehjk"];
+
+foreach($nameRes as $details2){
+    $DETAILSpOSITON = strpos($name31, $details2);
+
+    if($DETAILSpOSITON !== false ){
+        echo "$details2 no $DETAILSpOSITON . <br>";
+    }else{
+        echo "$DETAILSpOSITON is not  . <br>";
+    }
+}
+
+exit;
