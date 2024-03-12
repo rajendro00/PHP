@@ -42,6 +42,7 @@ echo str_word_count("Bangladesh is a agricultures country"),"<br>";
 // strpos
 echo strpos("Hello Bangladesh. Hello !World!", "World!"); 
 echo "<br>";
+
 $strpos = "Bangladesh Pakistan India Nepal Bhutan USA";
 // var_dump(strpos($strpos, 'India'));
 // var_dump(strpos($strpos, "jkdhfuiwehf"));
