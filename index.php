@@ -182,5 +182,11 @@ foreach($vv as $ss){
     }
 }
 
+$str = "(A) {B} [C] {{D}}";
+
+// echo str_replace(["A", "B"], ["F", "H"], $str);
+
+echo str_replace(['(',')','{', '}','[',']', '{{','}}'],['<span style="color:red">','</span>','<span style="color:green">','</span>','<span style="color:yellow">','</span>','<span style="color:tomato">','</span>'], $str);
+
 
 exit;
