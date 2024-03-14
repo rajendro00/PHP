@@ -234,5 +234,97 @@ var_dump($a13);
 echo "<br>";
  $b21 = "647698";
  echo (int)$b21;
-  
+
+//  To cast to string, use the (string) statement:
+echo "<br>";
+
+$a40 = 20;
+$a41 = 20.44;
+$a42 = "hello";
+$a43 = true;
+$a44 = NULL;
+
+// var_dump((string)$a40);
+// var_dump((string)$a41);
+// var_dump((string)$a42);
+// var_dump((string)$a43);
+// var_dump((string)$a44);
+
+var_dump((array)$a40);
+var_dump((array)$a41);
+var_dump((array)$a42);
+var_dump((array)$a43);
+var_dump((array)$a44);
+
+echo "<br>";
+
+// convert object to array
+
+class car{
+    public $color;
+    public $model;
+
+    public function __construct($color, $model){
+        $this->color = $color;
+        $this->model = $model;
+    }
+    public function message(){
+        return $this->color.$this->model;
+    }
+}
+
+$myCar = new car("red", "volvo");
+$myCar = (array)$myCar;
+var_dump($myCar);
+
+echo "<br>";
+// array to object
+
+$arr = ["Volvo", "BMW", "Honda"];
+$arr1 = ["Rajendro"=>"22", "Akash"=>"20", "Nur"=>"23"];
+
+var_dump((object)$arr);
+var_dump((object)$arr1);
+
+// min and max
+
+echo (min(0, 12, 23, 44, 99, -100));
+echo "<br>";
+echo (max(0, 12, 23, 44, 99, -100));
+echo "<br>";
+echo (abs(-66.66));
+echo "<br>";
+echo (sqrt(49));
+echo "<br>";
+echo (sqrt(64));
+echo "<br>";
+echo (sqrt(40));
+echo "<br>";
+echo (round(0.65));
+echo "<br>";
+echo (round(0.35));
+echo "<br>";
+echo (rand(10,20));
+echo "<br>";
+
+// constants
+define("GREETING", "Welcome to W3Schools.com!");
+echo GREETING;
+
+ const arr55 = ["Hello", "World", "Bangladesh"];
+ print_r(arr55);
+
+ define("name90",["Akash", "Nur", "Rajendro"]);
+
+ echo name90[1];
+//  print_r(name90);
+echo "<br>";
+define("define1", "This is my first practice");
+
+function res(){
+    echo define1;
+}
+res();
+
+echo(__FUNCTION__);
 exit;
