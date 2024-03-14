@@ -189,5 +189,50 @@ $str = "(A) {B} [C] {{D}}";
 
 echo str_replace(['(',')','{', '}','[',']', '{{','}}'],['<span style="color:red">','</span>','<span style="color:green">','</span>','<span style="color:yellow">','</span>','<span style="color:tomato">','</span>'], $str);
 
+// 
+echo "<br>";
 
+// check data type 
+$a = 10;
+$b = 20.22;
+$c = "30";
+var_dump($a,$b,$c);
+
+echo "<br>";
+
+// check int bool(true or false)
+$a1 = 5040;
+$b1 = 55.33;
+$c1 = "55.60";
+
+var_dump(is_int($a1));
+var_dump(is_int($b1));
+var_dump(is_int($c1));
+
+// Check if a numeric value is finite or infinite:
+$a12 = 1.9e411;
+var_dump($a12);
+
+// Invalid calculation will return a NaN value:
+
+$a13 = acos (8);
+var_dump($a13);
+
+// Check if the variable is numeric:
+   $a13 = 4545; 
+   var_dump(is_numeric($a13));
+   $a14 = "4545"; 
+   var_dump(is_numeric($a14));
+   $a15 = "59.85" + 100; 
+   var_dump(is_numeric($a15));
+   $a16 = "Hello";
+   var_dump(is_numeric($a16));
+
+// Cast float and string to integer:
+ $a21 = 402.566;
+ echo (int)$a21;
+echo "<br>";
+ $b21 = "647698";
+ echo (int)$b21;
+  
 exit;
