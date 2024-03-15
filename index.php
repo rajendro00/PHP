@@ -326,5 +326,23 @@ function res(){
 }
 res();
 
-echo(__FUNCTION__);
+echo "<br>";
+$equal = 20;
+$equa2 = 10;
+
+if($equal !== $equa2){
+    echo "Same value ";
+}else{
+    echo "different value";
+}
+echo "<br>";
+$int = 6747.88;
+var_dump(is_string($int));
+
+$som = acos(44);
+var_dump($som);
+
+$num = 8369;
+var_dump(is_numeric($num));
+
 exit;
