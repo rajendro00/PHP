@@ -443,4 +443,62 @@ if($y  % 100 != 0){
   echo "Hi";
 }
 
+echo "<br>";
+// number lower to upper 
+
+$number3 = -5;
+
+if($number3>=0 && $number3<100){
+    echo "$number3 is less than 100";
+}elseif($number3 == 100){
+    echo "$number3 is same value of 100";
+}elseif($number3<0){
+    echo "$number3 is a negetive number";
+}else{
+    echo "$number3 is greeter than 100 ";
+}
+
+echo "<br>";
+
+$number4 = 4;
+
+if($number4 % 2 == 0){
+    echo "$number4 is a even number";
+}else{
+    echo "$number4 is a odd number";
+}
+echo "<br>";
+
+$result5 = 80;
+
+if($result5<33){
+    echo "Fail";
+}elseif($result5>=33 && $result5<50){
+    echo "D Grade";
+}elseif($result5>=50 && $result5<60){
+    echo "C Grade";
+}elseif($result5>=60 && $result5<70){
+    echo "B Grade";
+}elseif($result5>=70 && $result5<80){
+    echo "A Garde";
+}elseif($result5>=80 && $result5<=100){
+    echo "A+ Grade";
+}else{
+    echo "Invalid Input";
+}
+
+echo "<br>";
+
+$voter2 = 17;
+
+$nationality2 = "Bangladesh";
+
+if($nationality2 == "Bangladesh"){
+    if($voter2>=18){
+        echo "yes you are voter";
+    }else{
+        echo "You are child";
+    }
+}
+
 exit;
