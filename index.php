@@ -501,4 +501,110 @@ if($nationality2 == "Bangladesh"){
     }
 }
 
+echo "<br>";
+
+$a= 49; 
+$b= 56;
+$c = 50;
+
+if($a<$b){
+    if($a<$c){
+        echo "$a is smaller than $b and $c";
+    }
+}
+
+echo "<br>";
+
+$day = Date("D");
+
+if($day == "Fri"){
+    echo "Holiday";
+}elseif($day == "Sat"){
+    echo "Saturday";
+}elseif($day == "Sun"){
+    echo "Sunday";
+}
+echo "<br>";
+// positive number or negetive number 
+$pos = 0;
+
+if($pos>=0){
+    echo "$pos is a positive number ";
+}else{
+    echo "$pos is a negative number";
+}
+
+echo "<br>";
+
+$x2 = 20;
+$x3 = 10;
+
+if($x2>=0 && $x3>=0){
+    echo "both $x2 and $x3 is a positive number";
+}elseif($x2<=0 && $x3>=0){
+    echo "$x2 is a negative number and $x3 positive number";
+}elseif($x2>=0 && $x3<=0){
+    echo "$x3 is a negative number and $x2 positive number";
+}else{
+    echo "both negative number";
+}
+
+echo "<br>";
+
+$num5 = 31;
+
+if($num5>=20 && $num5<=30){
+    echo "$num5 is within rang of 20 to 30";
+}else{
+    echo "The number is not within the range of 20 to 30.";
+}
+echo "<br>";
+
+$date = Date("Y-m-d");
+$deadline = "2024-03-17";
+
+if($date < $deadline ){
+    echo "Cooming Soon";
+}elseif($date == $deadline){
+    echo "Today you die";
+}else{
+    echo "Your date expired";
+}
+
+echo "<br>";
+
+$t = date("H");
+
+if ($t < "8") {
+  echo "Have a good morning!";
+}else {
+  echo "Have a good night!";
+}
+
+echo "<br>";
+
+// php ternery operator
+
+$number6 = 11;
+
+$ternery1 = ($number6 % 2 == 0 ) ? "$number6 is an even number " : "$number6 is an odd number";
+
+echo $ternery1;
+
+echo "<br>";
+
+$grad = "A";
+
+$result6 = ($grad == "A") ? "Excellent you got an A" : "Keep up the good work";
+echo $result6;
+
+echo "<br>";
+
+$num9 = 0;
+// echo ($num > 0) ? "Positive" : (($num < 0) ? "Negative" : "Zero");
+
+$result7 = ($num9 > 0) ? "Positive": (($num9 < 0) ? "Negative" : "zero");
+
+echo $result7;
+
 exit;
