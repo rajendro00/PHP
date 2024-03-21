@@ -614,7 +614,7 @@
 echo "<h2> Switch Case </h2>";
 
 function calculator($num1, $num2, $operator){
-    switch($operator){
+    switch( $operator ){
         case "+";
         return $num1 + $num2;
         break;
@@ -634,16 +634,16 @@ function calculator($num1, $num2, $operator){
         return $num1.$num2.pi();
         break;
         case "abs";
-        return abs($num1);
+        return abs( $num1 );
         break;
         case "sqrt";
-        return sqrt($num1);
+        return sqrt( $num1 );
         break;
         case "round";
-        return round($num1);
+        return round( $num1 );
         break;
         case "rand";
-        return rand($num1, $num2);
+        return rand( $num1, $num2 );
         break;
         default;
         return "Invalid operator";
@@ -662,16 +662,16 @@ $sqrt = calculator( 100, "" ,"sqrt" );
 $round = calculator( 12.5, "", "round" );
 $rand = calculator( 1, 10, "rand" );
 
-echo "Result: " . $addition ."<br>";
-echo "Result: " . $subtraction."<br>";
-echo "Result: " . $multiplication."<br>";
-echo "Result: " . $division."<br>";
-echo "Result: " . $modulus."<br>";
-echo "Result: " . $pi."<br>";
-echo "Result: " . $abs."<br>";
-echo "Result: " . $sqrt."<br>";
-echo "Result: " . $round."<br>";
-echo "Result: " . $rand."<br>";
+echo "Addition: " . $addition ."<br>";
+echo "Subtraction: " . $subtraction."<br>";
+echo "Multiplication: " . $multiplication."<br>";
+echo "Division: " . $division."<br>";
+echo "Modulus: " . $modulus."<br>";
+echo "PI: " . $pi."<br>";
+echo "Abs: " . $abs."<br>";
+echo "Sqrt: " . $sqrt."<br>";
+echo "Round: " . $round."<br>";
+echo "Rand: " . $rand."<br>";
 
 
 // if else 
@@ -688,8 +688,16 @@ function calculator2($number1, $number2, $operators){
         return $number1 / $number2;
     }elseif( $operators == "%" ){
         return $number1 % $number2;
-    }else{
-        return "Invalid operator";
+    }elseif( $operators == "pi"){
+        return pi();
+    }elseif( $operators == "abs" ){
+        return abs( $number1 );
+    }elseif( $operators == "sqrt" ){
+        return sqrt( $number1 );
+    }elseif( $operators == "round" ){
+        return round( $number2 );
+    }elseif( $operators == "rand" ){
+        return rand( $number1, $number2 );
     }
 }
 
@@ -698,11 +706,25 @@ $subtraction1 = calculator2( 40 , 50, "+");
 $multiplication1 = calculator2( 40 , 50, "*");
 $division1 = calculator2( 40 , 50, "/");
 $modulus1 = calculator2( 40 , 50, "%");
+$pi = calculator2( "" , "", "pi");
+$abs = calculator2( -100 , "", "abs");
+$sqrt = calculator2( 49 , "", "sqrt");
+$round = calculator2( "" , 60.5, "round");
+$rand = calculator2( 20, 50, "rand");
 
-echo "Result: ". $addition1. "<br>";
-echo "Result: ". $subtraction1. "<br>";
-echo "Result: ". $multiplication1. "<br>";
-echo "Result: ". $division1. "<br>";
-echo "Result: ". $modulus1. "<br>";
+echo "Addition: ". $addition1. "<br>";
+echo "Subtraction: ". $subtraction1. "<br>";
+echo "Multiplication: ". $multiplication1. "<br>";
+echo "Division: ". $division1. "<br>";
+echo "Modulus: ". $modulus1. "<br>";
+echo "PI: ". $pi. "<br>";
+echo "Abs: ". $abs. "<br>";
+echo "Sqrt: ". $sqrt. "<br>";
+echo "Round: ". $round. "<br>";
+echo "Rand: ". $rand. "<br>";
+
+
+// ternary operator
+
 
 exit;
