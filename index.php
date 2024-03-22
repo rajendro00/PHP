@@ -725,6 +725,40 @@ echo "Rand: ". $rand. "<br>";
 
 
 // ternary operator
+echo "<h2> ternary operator </h2>";
+
+function Cal( $n1, $n2, $op ){
+    return ($op == "+" ? $n2 + $n2:
+           ($op == "-" ? $n2 - $n2:
+           ($op == "*" ? $n2 * $n2:
+           ($op == "/" ? $n2 / $n2:
+           ($op == "pi" ? pi():
+           ($op == "abs" ? abs($n1):
+           ($op == "sqrt" ? sqrt($n2):
+           ($op == "round" ? round($n2):
+           ($op == "rand" ? rand($n1, $n2):
+           "Invalid Operator")))))))));
+}
+
+$s1 = cal( 10, 80, "+" );
+$s2 = cal( 10, 80, "-" );
+$s3 = cal( 10, 80, "*" );
+$s4 = cal( 10, 80, "/" );
+$s5 = cal( "", "", "pi" );
+$s6 = cal( -10, "", "abs" );
+$s7 = cal( "", 49, "sqrt" );
+$s8 = cal( "", 49.5, "round" );
+$s9 = cal( 1, 10, "rand" );
+
+echo "Result: " . $s1. "<br>";
+echo "Result: " . $s2. "<br>";
+echo "Result: " . $s3. "<br>";
+echo "Result: " . $s4. "<br>";
+echo "Result: " . $s5. "<br>";
+echo "Result: " . $s6. "<br>";
+echo "Result: " . $s7. "<br>";
+echo "Result: " . $s8. "<br>";
+echo "Result: " . $s9. "<br>";
 
 
 exit;
