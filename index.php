@@ -349,263 +349,263 @@
 
 // if else condition
 
-// $num = 15;
-
-// if($num<100){
-//     echo "$num is less than 100";
-// }
-
-// echo "<br>";
-
-// $even = 20;
-
-// if($even%2==0){
-//     echo "$even is even number";
-// }else{
-//     echo "$even is odd number";
-// }
-
-// echo "<br>";
-
-// $marks = 30;
-
-// if($marks<33){
-//     echo "fail";
-// }elseif($marks>=33 && $marks<50){
-//     echo "D Grade";
-// }elseif($marks>=50 && $marks<60){
-//     echo "C Grade";
-// }elseif($marks>=60 && $marks<70){
-//     echo "B Grade";
-// }elseif($marks>=70 && $marks<80){
-//     echo "A Grade";
-// }elseif($marks>=80 && $marks<101){
-//     echo "A+ Grade";
-// }else{
-//     echo "Invalid Input";
-// }
-
-// echo "<br>";
-
-// $age = 100;
-
-// $nationality = "Bangladesh";
-
-// if($nationality = "Bangladesh"){
-//     if($age>=18){
-//         echo "Voter";
-//     }else{
-//         echo "Child";
-//     }
-// }
-
-// echo "<br>";
-
-// $a = 34;
-// $b = 56;
-// $c = 45;
-
-// if($a < $b){
-//     if($a < $c){
-//         echo "$a is smaller than $b and $c";
-//     }
-// }
-
-// echo "<br>";
-
-// $day = Date("D");
-
-// if($day == "Fri"){
-//     echo "holiday";
-// }elseif($day == "Sat"){
-//     echo "Nice Saturday";
-// }elseif($day == "Sun"){
-//     echo "Nice Sunday";
-// }else{
-//     echo "Have a Nice day";
-// }
-
-// echo "<br>";
-
-// $year = 2024;
-
-// if(($year % 4 == 0) && ($year % 100 != 0 || $year % 400 == 0)){
-//     echo "$year is a leap year";
-// }else{
-//     echo "$year is not a leap year";
-// }
-
-// $y = 2000;
-
-// if($y  % 100 != 0){
-//     echo "Hello";
-// }else{
-//   echo "Hi";
-// }
-
-// echo "<br>";
-// // number lower to upper 
-
-// $number3 = -5;
-
-// if($number3>=0 && $number3<100){
-//     echo "$number3 is less than 100";
-// }elseif($number3 == 100){
-//     echo "$number3 is same value of 100";
-// }elseif($number3<0){
-//     echo "$number3 is a negetive number";
-// }else{
-//     echo "$number3 is greeter than 100 ";
-// }
-
-// echo "<br>";
-
-// $number4 = 4;
-
-// if($number4 % 2 == 0){
-//     echo "$number4 is a even number";
-// }else{
-//     echo "$number4 is a odd number";
-// }
-// echo "<br>";
-
-// $result5 = 80;
-
-// if($result5<33){
-//     echo "Fail";
-// }elseif($result5>=33 && $result5<50){
-//     echo "D Grade";
-// }elseif($result5>=50 && $result5<60){
-//     echo "C Grade";
-// }elseif($result5>=60 && $result5<70){
-//     echo "B Grade";
-// }elseif($result5>=70 && $result5<80){
-//     echo "A Garde";
-// }elseif($result5>=80 && $result5<=100){
-//     echo "A+ Grade";
-// }else{
-//     echo "Invalid Input";
-// }
-
-// echo "<br>";
-
-// $voter2 = 17;
-
-// $nationality2 = "Bangladesh";
-
-// if($nationality2 == "Bangladesh"){
-//     if($voter2>=18){
-//         echo "yes you are voter";
-//     }else{
-//         echo "You are child";
-//     }
-// }
-
-// echo "<br>";
-
-// $a= 49; 
-// $b= 56;
-// $c = 50;
-
-// if($a<$b){
-//     if($a<$c){
-//         echo "$a is smaller than $b and $c";
-//     }
-// }
-
-// echo "<br>";
-
-// $day = Date("D");
-
-// if($day == "Fri"){
-//     echo "Holiday";
-// }elseif($day == "Sat"){
-//     echo "Saturday";
-// }elseif($day == "Sun"){
-//     echo "Sunday";
-// }
-// echo "<br>";
-// // positive number or negetive number 
-// $pos = 0;
-
-// if($pos>=0){
-//     echo "$pos is a positive number ";
-// }else{
-//     echo "$pos is a negative number";
-// }
-
-// echo "<br>";
-
-// $x2 = 20;
-// $x3 = 10;
-
-// if($x2>=0 && $x3>=0){
-//     echo "both $x2 and $x3 is a positive number";
-// }elseif($x2<=0 && $x3>=0){
-//     echo "$x2 is a negative number and $x3 positive number";
-// }elseif($x2>=0 && $x3<=0){
-//     echo "$x3 is a negative number and $x2 positive number";
-// }else{
-//     echo "both negative number";
-// }
-
-// echo "<br>";
-
-// $num5 = 31;
-
-// if($num5>=20 && $num5<=30){
-//     echo "$num5 is within rang of 20 to 30";
-// }else{
-//     echo "The number is not within the range of 20 to 30.";
-// }
-// echo "<br>";
-
-// $date = Date("Y-m-d");
-// $deadline = "2024-03-17";
-
-// if($date < $deadline ){
-//     echo "Cooming Soon";
-// }elseif($date == $deadline){
-//     echo "Today you die";
-// }else{
-//     echo "Your date expired";
-// }
-
-// echo "<br>";
-
-// $t = date("H");
-
-// if ($t < "8") {
-//   echo "Have a good morning!";
-// }else {
-//   echo "Have a good night!";
-// }
-
-// echo "<br>";
-
-// // php ternery operator
-
-// $number6 = 11;
-
-// $ternery1 = ($number6 % 2 == 0 ) ? "$number6 is an even number " : "$number6 is an odd number";
-
-// echo $ternery1;
-
-// echo "<br>";
-
-// $grad = "A";
-
-// $result6 = ($grad == "A") ? "Excellent you got an A" : "Keep up the good work";
-// echo $result6;
-
-// echo "<br>";
-
-// $num9 = 0;
-// // echo ($num > 0) ? "Positive" : (($num < 0) ? "Negative" : "Zero");
-
-// $result7 = ($num9 > 0) ? "Positive": (($num9 < 0) ? "Negative" : "zero");
-
-// echo $result7;
+$num = 15;
+
+if($num<100){
+    echo "$num is less than 100";
+}
+
+echo "<br>";
+
+$even = 20;
+
+if($even%2==0){
+    echo "$even is even number";
+}else{
+    echo "$even is odd number";
+}
+
+echo "<br>";
+
+$marks = 30;
+
+if($marks<33){
+    echo "fail";
+}elseif($marks>=33 && $marks<50){
+    echo "D Grade";
+}elseif($marks>=50 && $marks<60){
+    echo "C Grade";
+}elseif($marks>=60 && $marks<70){
+    echo "B Grade";
+}elseif($marks>=70 && $marks<80){
+    echo "A Grade";
+}elseif($marks>=80 && $marks<101){
+    echo "A+ Grade";
+}else{
+    echo "Invalid Input";
+}
+
+echo "<br>";
+
+$age = 100;
+
+$nationality = "Bangladesh";
+
+if($nationality = "Bangladesh"){
+    if($age>=18){
+        echo "Voter";
+    }else{
+        echo "Child";
+    }
+}
+
+echo "<br>";
+
+$a = 34;
+$b = 56;
+$c = 45;
+
+if($a < $b){
+    if($a < $c){
+        echo "$a is smaller than $b and $c";
+    }
+}
+
+echo "<br>";
+
+$day = Date("D");
+
+if($day == "Fri"){
+    echo "holiday";
+}elseif($day == "Sat"){
+    echo "Nice Saturday";
+}elseif($day == "Sun"){
+    echo "Nice Sunday";
+}else{
+    echo "Have a Nice day";
+}
+
+echo "<br>";
+
+$year = 2024;
+
+if(($year % 4 == 0) && ($year % 100 != 0 || $year % 400 == 0)){
+    echo "$year is a leap year";
+}else{
+    echo "$year is not a leap year";
+}
+
+$y = 2000;
+
+if($y  % 100 != 0){
+    echo "Hello";
+}else{
+  echo "Hi";
+}
+
+echo "<br>";
+// number lower to upper 
+
+$number3 = -5;
+
+if($number3>=0 && $number3<100){
+    echo "$number3 is less than 100";
+}elseif($number3 == 100){
+    echo "$number3 is same value of 100";
+}elseif($number3<0){
+    echo "$number3 is a negetive number";
+}else{
+    echo "$number3 is greeter than 100 ";
+}
+
+echo "<br>";
+
+$number4 = 4;
+
+if($number4 % 2 == 0){
+    echo "$number4 is a even number";
+}else{
+    echo "$number4 is a odd number";
+}
+echo "<br>";
+
+$result5 = 80;
+
+if($result5<33){
+    echo "Fail";
+}elseif($result5>=33 && $result5<50){
+    echo "D Grade";
+}elseif($result5>=50 && $result5<60){
+    echo "C Grade";
+}elseif($result5>=60 && $result5<70){
+    echo "B Grade";
+}elseif($result5>=70 && $result5<80){
+    echo "A Garde";
+}elseif($result5>=80 && $result5<=100){
+    echo "A+ Grade";
+}else{
+    echo "Invalid Input";
+}
+
+echo "<br>";
+
+$voter2 = 17;
+
+$nationality2 = "Bangladesh";
+
+if($nationality2 == "Bangladesh"){
+    if($voter2>=18){
+        echo "yes you are voter";
+    }else{
+        echo "You are child";
+    }
+}
+
+echo "<br>";
+
+$a= 49; 
+$b= 56;
+$c = 50;
+
+if($a<$b){
+    if($a<$c){
+        echo "$a is smaller than $b and $c";
+    }
+}
+
+echo "<br>";
+
+$day = Date("D");
+
+if($day == "Fri"){
+    echo "Holiday";
+}elseif($day == "Sat"){
+    echo "Saturday";
+}elseif($day == "Sun"){
+    echo "Sunday";
+}
+echo "<br>";
+// positive number or negetive number 
+$pos = 0;
+
+if($pos>=0){
+    echo "$pos is a positive number ";
+}else{
+    echo "$pos is a negative number";
+}
+
+echo "<br>";
+
+$x2 = 20;
+$x3 = 10;
+
+if($x2>=0 && $x3>=0){
+    echo "both $x2 and $x3 is a positive number";
+}elseif($x2<=0 && $x3>=0){
+    echo "$x2 is a negative number and $x3 positive number";
+}elseif($x2>=0 && $x3<=0){
+    echo "$x3 is a negative number and $x2 positive number";
+}else{
+    echo "both negative number";
+}
+
+echo "<br>";
+
+$num5 = 31;
+
+if($num5>=20 && $num5<=30){
+    echo "$num5 is within rang of 20 to 30";
+}else{
+    echo "The number is not within the range of 20 to 30.";
+}
+echo "<br>";
+
+$date = Date("Y-m-d");
+$deadline = "2024-03-17";
+
+if($date < $deadline ){
+    echo "Cooming Soon";
+}elseif($date == $deadline){
+    echo "Today you die";
+}else{
+    echo "Your date expired";
+}
+
+echo "<br>";
+
+$t = date("H");
+
+if ($t < "8") {
+  echo "Have a good morning!";
+}else {
+  echo "Have a good night!";
+}
+
+echo "<br>";
+
+// php ternery operator
+
+$number6 = 11;
+
+$ternery1 = ($number6 % 2 == 0 ) ? "$number6 is an even number " : "$number6 is an odd number";
+
+echo $ternery1;
+
+echo "<br>";
+
+$grad = "A";
+
+$result6 = ($grad == "A") ? "Excellent you got an A" : "Keep up the good work";
+echo $result6;
+
+echo "<br>";
+
+$num9 = 0;
+// echo ($num > 0) ? "Positive" : (($num < 0) ? "Negative" : "Zero");
+
+$result7 = ($num9 > 0) ? "Positive": (($num9 < 0) ? "Negative" : "zero");
+
+echo $result7;
 
 // php function
 // calculator
@@ -675,6 +675,7 @@ echo "Rand: " . $rand."<br>";
 
 
 // if else 
+
 echo "<h2> if else </h2>";
 
 function calculator2($number1, $number2, $operators){
@@ -702,7 +703,7 @@ function calculator2($number1, $number2, $operators){
 }
 
 $addition1 = calculator2( 40 , 50, "+");
-$subtraction1 = calculator2( 40 , 50, "+");
+$subtraction1 = calculator2( 40 , 50, "-");
 $multiplication1 = calculator2( 40 , 50, "*");
 $division1 = calculator2( 40 , 50, "/");
 $modulus1 = calculator2( 40 , 50, "%");
@@ -759,6 +760,6 @@ echo "Result: " . $s6. "<br>";
 echo "Result: " . $s7. "<br>";
 echo "Result: " . $s8. "<br>";
 echo "Result: " . $s9. "<br>";
-
+ 
 
 exit;
