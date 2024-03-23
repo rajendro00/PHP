@@ -761,5 +761,72 @@ echo "Result: " . $s7. "<br>";
 echo "Result: " . $s8. "<br>";
 echo "Result: " . $s9. "<br>";
  
+// printf and echo
+
+echo "<h2> echo and printf </h2> <br>";
+
+$fname = "Rajendro";
+$lname = " Kundu";
+
+echo "My name is $fname $lname <br>";
+echo "My name is ". $fname. $lname. "<br>";
+echo "My name is {$fname} {$lname} <br>";
+printf("My %s name is %s %s ","Full", $fname, $lname);
+
+// while loop
+
+echo "<h2> while loop </h2> <br>";
+
+$i = 0;
+
+while( $i < 6 ) :
+    echo $i."<br>";
+    // $i = $i +1;
+    // $i += 1;
+    $i++;
+endwhile;
+
+echo "<h2> while loop even number </h2> <br>";
+
+$even = 2;
+
+while( $even < 20 ){
+    echo $even. "<br>";
+
+    $even +=2;
+}
+
+echo "<h2> while loop odd number </h2> <br>";
+
+$odd = 1;
+
+while( $odd < 20 ){
+    echo $odd. "<br>";
+
+    $odd +=2;
+}
+
+echo "<h2> while loop break </h2> <br>";
+
+$break = 1;
+
+while( $break < 10 ){
+    if( $break == 5 ) break;
+    echo $break."<br>";
+    $break++;
+}
+
+echo "<h2> while loop continue </h2> <br>";
+
+$continue = 0;
+
+while( $continue < 10 ){
+    $continue++;
+    if( $continue == 3 ) continue;
+    if( $continue == 5 ) continue;
+    if( $continue == 8 ) continue;
+    echo $continue."<br>";
+}
+
 
 exit;
