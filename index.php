@@ -828,5 +828,48 @@ while( $continue < 10 ){
     echo $continue."<br>";
 }
 
+echo "<h2> do while loop </h2> <br>";
+
+$i2 = 1;
+
+do{
+    echo $i2."<br>";
+    $i2++;
+}while( $i2 < 10 );
+
+
+echo "<h2> do while loop break </h2> <br>";
+
+$i3 = 1;
+
+do{
+    if( $i3 == 4 ) break;
+    echo $i3. "<br>";
+    $i3++;
+}while( $i3 < 10 );
+
+echo "<h2> do while loop continue </h2> <br>";
+
+$i4 = 0;
+
+do{
+    $i4++;
+    if( $i4 == 4 ) continue;
+    if( $i4 == 7 ) continue;
+    echo $i4."<br>";
+}while( $i4 < 10 );
+
+
+echo "<h2> string </h2> <br>";
+
+echo strpos("Hello World!", "World!"),"<br>";
+
+$explode = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like";
+$explodeResult = explode(" ", $explode);
+
+echo "<pre>";
+print_r($explodeResult);
+echo "</pre>";
+
 
 exit;
