@@ -777,13 +777,13 @@ printf("My %s name is %s %s ","Full", $fname, $lname);
 
 echo "<h2> while loop </h2> <br>";
 
-$i = 10;
+$i = 1;
 
-while( $i > 0 ) :
-    echo $i."<br>"; 
-    // $i = $i +1;
-    // $i += 1;
-    $i--;
+while( $i < 10 ) :
+    $i++;
+  echo "*"."<br>";
+
+    
 endwhile;
 
 echo "<h2> while loop even number </h2> <br>";
@@ -862,14 +862,63 @@ do{
 
 echo "<h2> string </h2> <br>";
 
-echo strpos("Hello World!", "World!"),"<br>";
+$even2 = 1;
 
-$explode = "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like";
-$explodeResult = explode(" ", $explode);
+while( $even2 < 20 ){
+    if( $even2 % 2 == 0 ){
+        echo $even2."<br>";
+    }
+    $even2++;
+}
 
-echo "<pre>";
-print_r($explodeResult);
-echo "</pre>";
+echo "<h2> 3A </h2> <br>";
+
+$number20 = 1;
+
+while( $number20 < 50 ){
+    echo $number20."<br>";
+    if( $number20 % 3 == 0 ){
+        echo "A";
+    }
+    $number20++;
+}
+
+// for loop
+echo "<h2> for loop </h2> <br>";
+
+echo "<h2> even </h2> <br>";
+
+for( $i = 0; $i < 20; $i+=2){
+    echo $i."<br>";
+}
+
+echo "<h2> odd </h2> <br>";
+
+for( $i = 0; $i < 20 ; $i++ ){
+    if( $i % 2 != 0 ){
+        echo $i."<br>";
+    }
+}
+
+//  do while
+echo "<h2> Do while loop </h2> <br>";
+
+$number30 = 0;
+do{
+    if( $number30 % 2 != 0 ){
+        echo $number30."<br>";
+    }
+    $number30++;
+}while( $number30 < 20 );
+
+echo "<h2> while loop </h2> <br>";
+
+$number40 = 0;
+
+while( $number40 < 10 ){
+    echo "*"."<br>";
+    $number40++;
+}
 
 
 exit;
