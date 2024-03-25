@@ -777,13 +777,13 @@ printf("My %s name is %s %s ","Full", $fname, $lname);
 
 echo "<h2> while loop </h2> <br>";
 
-$i = 0;
+$i = 10;
 
-while( $i < 6 ) :
+while( $i > 0 ) :
     echo $i."<br>";
     // $i = $i +1;
     // $i += 1;
-    $i++;
+    $i--;
 endwhile;
 
 echo "<h2> while loop even number </h2> <br>";
