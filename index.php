@@ -780,7 +780,7 @@ echo "<h2> while loop </h2> <br>";
 $i = 10;
 
 while( $i > 0 ) :
-    echo $i."<br>";
+    echo $i."<br>"; 
     // $i = $i +1;
     // $i += 1;
     $i--;
