@@ -349,429 +349,429 @@
 
 // if else condition
 
-$num = 15;
-
-if($num<100){
-    echo "$num is less than 100";
-}
-
-echo "<br>";
-
-$even = 20;
-
-if($even%2==0){
-    echo "$even is even number";
-}else{
-    echo "$even is odd number";
-}
-
-echo "<br>";
-
-$marks = 30;
-
-if($marks<33){
-    echo "fail";
-}elseif($marks>=33 && $marks<50){
-    echo "D Grade";
-}elseif($marks>=50 && $marks<60){
-    echo "C Grade";
-}elseif($marks>=60 && $marks<70){
-    echo "B Grade";
-}elseif($marks>=70 && $marks<80){
-    echo "A Grade";
-}elseif($marks>=80 && $marks<101){
-    echo "A+ Grade";
-}else{
-    echo "Invalid Input";
-}
-
-echo "<br>";
-
-$age = 100;
-
-$nationality = "Bangladesh";
-
-if($nationality = "Bangladesh"){
-    if($age>=18){
-        echo "Voter";
-    }else{
-        echo "Child";
-    }
-}
-
-echo "<br>";
-
-$a = 34;
-$b = 56;
-$c = 45;
-
-if($a < $b){
-    if($a < $c){
-        echo "$a is smaller than $b and $c";
-    }
-}
-
-echo "<br>";
-
-$day = Date("D");
-
-if($day == "Fri"){
-    echo "holiday";
-}elseif($day == "Sat"){
-    echo "Nice Saturday";
-}elseif($day == "Sun"){
-    echo "Nice Sunday";
-}else{
-    echo "Have a Nice day";
-}
-
-echo "<br>";
-
-$year = 2024;
-
-if(($year % 4 == 0) && ($year % 100 != 0 || $year % 400 == 0)){
-    echo "$year is a leap year";
-}else{
-    echo "$year is not a leap year";
-}
-
-$y = 2000;
-
-if($y  % 100 != 0){
-    echo "Hello";
-}else{
-  echo "Hi";
-}
-
-echo "<br>";
-// number lower to upper 
-
-$number3 = -5;
-
-if($number3>=0 && $number3<100){
-    echo "$number3 is less than 100";
-}elseif($number3 == 100){
-    echo "$number3 is same value of 100";
-}elseif($number3<0){
-    echo "$number3 is a negetive number";
-}else{
-    echo "$number3 is greeter than 100 ";
-}
-
-echo "<br>";
-
-$number4 = 4;
-
-if($number4 % 2 == 0){
-    echo "$number4 is a even number";
-}else{
-    echo "$number4 is a odd number";
-}
-echo "<br>";
-
-$result5 = 80;
-
-if($result5<33){
-    echo "Fail";
-}elseif($result5>=33 && $result5<50){
-    echo "D Grade";
-}elseif($result5>=50 && $result5<60){
-    echo "C Grade";
-}elseif($result5>=60 && $result5<70){
-    echo "B Grade";
-}elseif($result5>=70 && $result5<80){
-    echo "A Garde";
-}elseif($result5>=80 && $result5<=100){
-    echo "A+ Grade";
-}else{
-    echo "Invalid Input";
-}
-
-echo "<br>";
-
-$voter2 = 17;
-
-$nationality2 = "Bangladesh";
-
-if($nationality2 == "Bangladesh"){
-    if($voter2>=18){
-        echo "yes you are voter";
-    }else{
-        echo "You are child";
-    }
-}
-
-echo "<br>";
-
-$a= 49; 
-$b= 56;
-$c = 50;
-
-if($a<$b){
-    if($a<$c){
-        echo "$a is smaller than $b and $c";
-    }
-}
+// $num = 15;
+
+// if($num<100){
+//     echo "$num is less than 100";
+// }
+
+// echo "<br>";
+
+// $even = 20;
+
+// if($even%2==0){
+//     echo "$even is even number";
+// }else{
+//     echo "$even is odd number";
+// }
+
+// echo "<br>";
+
+// $marks = 30;
+
+// if($marks<33){
+//     echo "fail";
+// }elseif($marks>=33 && $marks<50){
+//     echo "D Grade";
+// }elseif($marks>=50 && $marks<60){
+//     echo "C Grade";
+// }elseif($marks>=60 && $marks<70){
+//     echo "B Grade";
+// }elseif($marks>=70 && $marks<80){
+//     echo "A Grade";
+// }elseif($marks>=80 && $marks<101){
+//     echo "A+ Grade";
+// }else{
+//     echo "Invalid Input";
+// }
+
+// echo "<br>";
+
+// $age = 100;
+
+// $nationality = "Bangladesh";
+
+// if($nationality = "Bangladesh"){
+//     if($age>=18){
+//         echo "Voter";
+//     }else{
+//         echo "Child";
+//     }
+// }
+
+// echo "<br>";
+
+// $a = 34;
+// $b = 56;
+// $c = 45;
+
+// if($a < $b){
+//     if($a < $c){
+//         echo "$a is smaller than $b and $c";
+//     }
+// }
+
+// echo "<br>";
+
+// $day = Date("D");
+
+// if($day == "Fri"){
+//     echo "holiday";
+// }elseif($day == "Sat"){
+//     echo "Nice Saturday";
+// }elseif($day == "Sun"){
+//     echo "Nice Sunday";
+// }else{
+//     echo "Have a Nice day";
+// }
+
+// echo "<br>";
+
+// $year = 2024;
+
+// if(($year % 4 == 0) && ($year % 100 != 0 || $year % 400 == 0)){
+//     echo "$year is a leap year";
+// }else{
+//     echo "$year is not a leap year";
+// }
+
+// $y = 2000;
+
+// if($y  % 100 != 0){
+//     echo "Hello";
+// }else{
+//   echo "Hi";
+// }
+
+// echo "<br>";
+// // number lower to upper 
+
+// $number3 = -5;
+
+// if($number3>=0 && $number3<100){
+//     echo "$number3 is less than 100";
+// }elseif($number3 == 100){
+//     echo "$number3 is same value of 100";
+// }elseif($number3<0){
+//     echo "$number3 is a negetive number";
+// }else{
+//     echo "$number3 is greeter than 100 ";
+// }
+
+// echo "<br>";
+
+// $number4 = 4;
+
+// if($number4 % 2 == 0){
+//     echo "$number4 is a even number";
+// }else{
+//     echo "$number4 is a odd number";
+// }
+// echo "<br>";
+
+// $result5 = 80;
+
+// if($result5<33){
+//     echo "Fail";
+// }elseif($result5>=33 && $result5<50){
+//     echo "D Grade";
+// }elseif($result5>=50 && $result5<60){
+//     echo "C Grade";
+// }elseif($result5>=60 && $result5<70){
+//     echo "B Grade";
+// }elseif($result5>=70 && $result5<80){
+//     echo "A Garde";
+// }elseif($result5>=80 && $result5<=100){
+//     echo "A+ Grade";
+// }else{
+//     echo "Invalid Input";
+// }
+
+// echo "<br>";
+
+// $voter2 = 17;
+
+// $nationality2 = "Bangladesh";
+
+// if($nationality2 == "Bangladesh"){
+//     if($voter2>=18){
+//         echo "yes you are voter";
+//     }else{
+//         echo "You are child";
+//     }
+// }
+
+// echo "<br>";
+
+// $a= 49; 
+// $b= 56;
+// $c = 50;
+
+// if($a<$b){
+//     if($a<$c){
+//         echo "$a is smaller than $b and $c";
+//     }
+// }
 
-echo "<br>";
+// echo "<br>";
 
-$day = Date("D");
+// $day = Date("D");
 
-if($day == "Fri"){
-    echo "Holiday";
-}elseif($day == "Sat"){
-    echo "Saturday";
-}elseif($day == "Sun"){
-    echo "Sunday";
-}
-echo "<br>";
-// positive number or negetive number 
-$pos = 0;
-
-if($pos>=0){
-    echo "$pos is a positive number ";
-}else{
-    echo "$pos is a negative number";
-}
-
-echo "<br>";
-
-$x2 = 20;
-$x3 = 10;
-
-if($x2>=0 && $x3>=0){
-    echo "both $x2 and $x3 is a positive number";
-}elseif($x2<=0 && $x3>=0){
-    echo "$x2 is a negative number and $x3 positive number";
-}elseif($x2>=0 && $x3<=0){
-    echo "$x3 is a negative number and $x2 positive number";
-}else{
-    echo "both negative number";
-}
-
-echo "<br>";
-
-$num5 = 31;
-
-if($num5>=20 && $num5<=30){
-    echo "$num5 is within rang of 20 to 30";
-}else{
-    echo "The number is not within the range of 20 to 30.";
-}
-echo "<br>";
-
-$date = Date("Y-m-d");
-$deadline = "2024-03-17";
-
-if($date < $deadline ){
-    echo "Cooming Soon";
-}elseif($date == $deadline){
-    echo "Today you die";
-}else{
-    echo "Your date expired";
-}
-
-echo "<br>";
-
-$t = date("H");
-
-if ($t < "8") {
-  echo "Have a good morning!";
-}else {
-  echo "Have a good night!";
-}
-
-echo "<br>";
-
-// php ternery operator
-
-$number6 = 11;
-
-$ternery1 = ($number6 % 2 == 0 ) ? "$number6 is an even number " : "$number6 is an odd number";
-
-echo $ternery1;
-
-echo "<br>";
-
-$grad = "A";
-
-$result6 = ($grad == "A") ? "Excellent you got an A" : "Keep up the good work";
-echo $result6;
-
-echo "<br>";
-
-$num9 = 0;
-// echo ($num > 0) ? "Positive" : (($num < 0) ? "Negative" : "Zero");
-
-$result7 = ($num9 > 0) ? "Positive": (($num9 < 0) ? "Negative" : "zero");
-
-echo $result7;
-
-// php function
-// calculator
-// switch case
-
-echo "<h2> Switch Case </h2>";
-
-function calculator($num1, $num2, $operator){
-    switch( $operator ){
-        case "+";
-        return $num1 + $num2;
-        break;
-        case "-";
-        return $num1 - $num2;
-        break;
-        case "*";
-        return $num1 * $num2;
-        break;
-        case "/";
-        return $num1 / $num2;
-        break;
-        case "%";
-        return $num1 % $num2;
-        break;
-        case "pi";
-        return $num1.$num2.pi();
-        break;
-        case "abs";
-        return abs( $num1 );
-        break;
-        case "sqrt";
-        return sqrt( $num1 );
-        break;
-        case "round";
-        return round( $num1 );
-        break;
-        case "rand";
-        return rand( $num1, $num2 );
-        break;
-        default;
-        return "Invalid operator";
-
-    }
-}
-
-$addition = calculator( 10, 20, "+");
-$subtraction = calculator( 10, 20, "-");
-$multiplication = calculator( 10, 20, "*");
-$division = calculator( 10, 20, "/");
-$modulus = calculator( 10, 20, "%");
-$pi = calculator( "", "", "pi" );
-$abs = calculator( -90, "" ,"abs" );
-$sqrt = calculator( 100, "" ,"sqrt" );
-$round = calculator( 12.5, "", "round" );
-$rand = calculator( 1, 10, "rand" );
-
-echo "Addition: " . $addition ."<br>";
-echo "Subtraction: " . $subtraction."<br>";
-echo "Multiplication: " . $multiplication."<br>";
-echo "Division: " . $division."<br>";
-echo "Modulus: " . $modulus."<br>";
-echo "PI: " . $pi."<br>";
-echo "Abs: " . $abs."<br>";
-echo "Sqrt: " . $sqrt."<br>";
-echo "Round: " . $round."<br>";
-echo "Rand: " . $rand."<br>";
-
-
-// if else 
-
-echo "<h2> if else </h2>";
-
-function calculator2($number1, $number2, $operators){
-    if( $operators == "+" ){
-        return $number1 + $number2;
-    }elseif( $operators == "-" ){
-        return $number1 - $number2;
-    }elseif( $operators == "*" ){
-        return $number1 * $number2;
-    }elseif( $operators == "/" ){
-        return $number1 / $number2;
-    }elseif( $operators == "%" ){
-        return $number1 % $number2;
-    }elseif( $operators == "pi"){
-        return pi();
-    }elseif( $operators == "abs" ){
-        return abs( $number1 );
-    }elseif( $operators == "sqrt" ){
-        return sqrt( $number1 );
-    }elseif( $operators == "round" ){
-        return round( $number2 );
-    }elseif( $operators == "rand" ){
-        return rand( $number1, $number2 );
-    }
-}
-
-$addition1 = calculator2( 40 , 50, "+");
-$subtraction1 = calculator2( 40 , 50, "-");
-$multiplication1 = calculator2( 40 , 50, "*");
-$division1 = calculator2( 40 , 50, "/");
-$modulus1 = calculator2( 40 , 50, "%");
-$pi = calculator2( "" , "", "pi");
-$abs = calculator2( -100 , "", "abs");
-$sqrt = calculator2( 49 , "", "sqrt");
-$round = calculator2( "" , 60.5, "round");
-$rand = calculator2( 20, 50, "rand");
-
-echo "Addition: ". $addition1. "<br>";
-echo "Subtraction: ". $subtraction1. "<br>";
-echo "Multiplication: ". $multiplication1. "<br>";
-echo "Division: ". $division1. "<br>";
-echo "Modulus: ". $modulus1. "<br>";
-echo "PI: ". $pi. "<br>";
-echo "Abs: ". $abs. "<br>";
-echo "Sqrt: ". $sqrt. "<br>";
-echo "Round: ". $round. "<br>";
-echo "Rand: ". $rand. "<br>";
-
-
-// ternary operator
-echo "<h2> ternary operator </h2>";
-
-function Cal( $n1, $n2, $op ){
-    return ($op == "+" ? $n2 + $n2:
-           ($op == "-" ? $n2 - $n2:
-           ($op == "*" ? $n2 * $n2:
-           ($op == "/" ? $n2 / $n2:
-           ($op == "pi" ? pi():
-           ($op == "abs" ? abs($n1):
-           ($op == "sqrt" ? sqrt($n2):
-           ($op == "round" ? round($n2):
-           ($op == "rand" ? rand($n1, $n2):
-           "Invalid Operator")))))))));
-}
-
-$s1 = cal( 10, 80, "+" );
-$s2 = cal( 10, 80, "-" );
-$s3 = cal( 10, 80, "*" );
-$s4 = cal( 10, 80, "/" );
-$s5 = cal( "", "", "pi" );
-$s6 = cal( -10, "", "abs" );
-$s7 = cal( "", 49, "sqrt" );
-$s8 = cal( "", 49.5, "round" );
-$s9 = cal( 1, 10, "rand" );
-
-echo "Result: " . $s1. "<br>";
-echo "Result: " . $s2. "<br>";
-echo "Result: " . $s3. "<br>";
-echo "Result: " . $s4. "<br>";
-echo "Result: " . $s5. "<br>";
-echo "Result: " . $s6. "<br>";
-echo "Result: " . $s7. "<br>";
-echo "Result: " . $s8. "<br>";
-echo "Result: " . $s9. "<br>";
+// if($day == "Fri"){
+//     echo "Holiday";
+// }elseif($day == "Sat"){
+//     echo "Saturday";
+// }elseif($day == "Sun"){
+//     echo "Sunday";
+// }
+// echo "<br>";
+// // positive number or negetive number 
+// $pos = 0;
+
+// if($pos>=0){
+//     echo "$pos is a positive number ";
+// }else{
+//     echo "$pos is a negative number";
+// }
+
+// echo "<br>";
+
+// $x2 = 20;
+// $x3 = 10;
+
+// if($x2>=0 && $x3>=0){
+//     echo "both $x2 and $x3 is a positive number";
+// }elseif($x2<=0 && $x3>=0){
+//     echo "$x2 is a negative number and $x3 positive number";
+// }elseif($x2>=0 && $x3<=0){
+//     echo "$x3 is a negative number and $x2 positive number";
+// }else{
+//     echo "both negative number";
+// }
+
+// echo "<br>";
+
+// $num5 = 31;
+
+// if($num5>=20 && $num5<=30){
+//     echo "$num5 is within rang of 20 to 30";
+// }else{
+//     echo "The number is not within the range of 20 to 30.";
+// }
+// echo "<br>";
+
+// $date = Date("Y-m-d");
+// $deadline = "2024-03-17";
+
+// if($date < $deadline ){
+//     echo "Cooming Soon";
+// }elseif($date == $deadline){
+//     echo "Today you die";
+// }else{
+//     echo "Your date expired";
+// }
+
+// echo "<br>";
+
+// $t = date("H");
+
+// if ($t < "8") {
+//   echo "Have a good morning!";
+// }else {
+//   echo "Have a good night!";
+// }
+
+// echo "<br>";
+
+// // php ternery operator
+
+// $number6 = 11;
+
+// $ternery1 = ($number6 % 2 == 0 ) ? "$number6 is an even number " : "$number6 is an odd number";
+
+// echo $ternery1;
+
+// echo "<br>";
+
+// $grad = "A";
+
+// $result6 = ($grad == "A") ? "Excellent you got an A" : "Keep up the good work";
+// echo $result6;
+
+// echo "<br>";
+
+// $num9 = 0;
+// // echo ($num > 0) ? "Positive" : (($num < 0) ? "Negative" : "Zero");
+
+// $result7 = ($num9 > 0) ? "Positive": (($num9 < 0) ? "Negative" : "zero");
+
+// echo $result7;
+
+// // php function
+// // calculator
+// // switch case
+
+// echo "<h2> Switch Case </h2>";
+
+// function calculator($num1, $num2, $operator){
+//     switch( $operator ){
+//         case "+";
+//         return $num1 + $num2;
+//         break;
+//         case "-";
+//         return $num1 - $num2;
+//         break;
+//         case "*";
+//         return $num1 * $num2;
+//         break;
+//         case "/";
+//         return $num1 / $num2;
+//         break;
+//         case "%";
+//         return $num1 % $num2;
+//         break;
+//         case "pi";
+//         return $num1.$num2.pi();
+//         break;
+//         case "abs";
+//         return abs( $num1 );
+//         break;
+//         case "sqrt";
+//         return sqrt( $num1 );
+//         break;
+//         case "round";
+//         return round( $num1 );
+//         break;
+//         case "rand";
+//         return rand( $num1, $num2 );
+//         break;
+//         default;
+//         return "Invalid operator";
+
+//     }
+// }
+
+// $addition = calculator( 10, 20, "+");
+// $subtraction = calculator( 10, 20, "-");
+// $multiplication = calculator( 10, 20, "*");
+// $division = calculator( 10, 20, "/");
+// $modulus = calculator( 10, 20, "%");
+// $pi = calculator( "", "", "pi" );
+// $abs = calculator( -90, "" ,"abs" );
+// $sqrt = calculator( 100, "" ,"sqrt" );
+// $round = calculator( 12.5, "", "round" );
+// $rand = calculator( 1, 10, "rand" );
+
+// echo "Addition: " . $addition ."<br>";
+// echo "Subtraction: " . $subtraction."<br>";
+// echo "Multiplication: " . $multiplication."<br>";
+// echo "Division: " . $division."<br>";
+// echo "Modulus: " . $modulus."<br>";
+// echo "PI: " . $pi."<br>";
+// echo "Abs: " . $abs."<br>";
+// echo "Sqrt: " . $sqrt."<br>";
+// echo "Round: " . $round."<br>";
+// echo "Rand: " . $rand."<br>";
+
+
+// // if else 
+
+// echo "<h2> if else </h2>";
+
+// function calculator2($number1, $number2, $operators){
+//     if( $operators == "+" ){
+//         return $number1 + $number2;
+//     }elseif( $operators == "-" ){
+//         return $number1 - $number2;
+//     }elseif( $operators == "*" ){
+//         return $number1 * $number2;
+//     }elseif( $operators == "/" ){
+//         return $number1 / $number2;
+//     }elseif( $operators == "%" ){
+//         return $number1 % $number2;
+//     }elseif( $operators == "pi"){
+//         return pi();
+//     }elseif( $operators == "abs" ){
+//         return abs( $number1 );
+//     }elseif( $operators == "sqrt" ){
+//         return sqrt( $number1 );
+//     }elseif( $operators == "round" ){
+//         return round( $number2 );
+//     }elseif( $operators == "rand" ){
+//         return rand( $number1, $number2 );
+//     }
+// }
+
+// $addition1 = calculator2( 40 , 50, "+");
+// $subtraction1 = calculator2( 40 , 50, "-");
+// $multiplication1 = calculator2( 40 , 50, "*");
+// $division1 = calculator2( 40 , 50, "/");
+// $modulus1 = calculator2( 40 , 50, "%");
+// $pi = calculator2( "" , "", "pi");
+// $abs = calculator2( -100 , "", "abs");
+// $sqrt = calculator2( 49 , "", "sqrt");
+// $round = calculator2( "" , 60.5, "round");
+// $rand = calculator2( 20, 50, "rand");
+
+// echo "Addition: ". $addition1. "<br>";
+// echo "Subtraction: ". $subtraction1. "<br>";
+// echo "Multiplication: ". $multiplication1. "<br>";
+// echo "Division: ". $division1. "<br>";
+// echo "Modulus: ". $modulus1. "<br>";
+// echo "PI: ". $pi. "<br>";
+// echo "Abs: ". $abs. "<br>";
+// echo "Sqrt: ". $sqrt. "<br>";
+// echo "Round: ". $round. "<br>";
+// echo "Rand: ". $rand. "<br>";
+
+
+// // ternary operator
+// echo "<h2> ternary operator </h2>";
+
+// function Cal( $n1, $n2, $op ){
+//     return ($op == "+" ? $n2 + $n2:
+//            ($op == "-" ? $n2 - $n2:
+//            ($op == "*" ? $n2 * $n2:
+//            ($op == "/" ? $n2 / $n2:
+//            ($op == "pi" ? pi():
+//            ($op == "abs" ? abs($n1):
+//            ($op == "sqrt" ? sqrt($n2):
+//            ($op == "round" ? round($n2):
+//            ($op == "rand" ? rand($n1, $n2):
+//            "Invalid Operator")))))))));
+// }
+
+// $s1 = cal( 10, 80, "+" );
+// $s2 = cal( 10, 80, "-" );
+// $s3 = cal( 10, 80, "*" );
+// $s4 = cal( 10, 80, "/" );
+// $s5 = cal( "", "", "pi" );
+// $s6 = cal( -10, "", "abs" );
+// $s7 = cal( "", 49, "sqrt" );
+// $s8 = cal( "", 49.5, "round" );
+// $s9 = cal( 1, 10, "rand" );
+
+// echo "Result: " . $s1. "<br>";
+// echo "Result: " . $s2. "<br>";
+// echo "Result: " . $s3. "<br>";
+// echo "Result: " . $s4. "<br>";
+// echo "Result: " . $s5. "<br>";
+// echo "Result: " . $s6. "<br>";
+// echo "Result: " . $s7. "<br>";
+// echo "Result: " . $s8. "<br>";
+// echo "Result: " . $s9. "<br>";
  
-// printf and echo
+// // printf and echo
 
-echo "<h2> echo and printf </h2> <br>";
+// echo "<h2> echo and printf </h2> <br>";
 
-$fname = "Rajendro";
-$lname = " Kundu";
+// $fname = "Rajendro";
+// $lname = " Kundu";
 
-echo "My name is $fname $lname <br>";
-echo "My name is ". $fname. $lname. "<br>";
-echo "My name is {$fname} {$lname} <br>";
-printf("My %s name is %s %s ","Full", $fname, $lname);
+// echo "My name is $fname $lname <br>";
+// echo "My name is ". $fname. $lname. "<br>";
+// echo "My name is {$fname} {$lname} <br>";
+// printf("My %s name is %s %s ","Full", $fname, $lname);
 
 // while loop
 
@@ -918,6 +918,53 @@ $number40 = 0;
 while( $number40 < 10 ){
     echo "*"."<br>";
     $number40++;
+}
+
+echo "<h2> nested loop </h2> <br>";
+
+for( $i =1; $i< 10; $i++){
+    echo $i."<br>";
+    for($j = 1; $j < 3; $j++ ){
+        echo $j;
+    }
+    echo "<br>";
+}
+
+echo "<h2> nested loop </h2> <br>";
+
+for( $i =2; $i <= 10; $i +=1){
+    for( $j =1; $j < 10 ; $j+=1 ){
+        echo $j." ";
+    }
+    echo "<br>";
+}
+
+echo "<h2> nested loop </h2> <br>";
+
+for( $i =1; $i <= 10; $i +=1){
+    for( $j =1; $j < 10 ; $j+=1 ){
+        echo "[ ".$i * $j."] ";
+    }
+    echo "<br>";
+}
+echo "<h2> nested loop </h2> <br>";
+
+for( $i = 1; $i <10; $i++ ){
+    echo $i."<br>";
+    for( $j =0; $j < $i; $j++ ){
+        echo "A";
+    }
+    echo "<br>";
+}
+
+echo "<h2> nested loop </h2> <br>";
+
+for( $i = 1; $i <10; $i++ ){
+    // echo $i."<br>";
+    for( $j =0; $j < $i; $j++ ){
+        echo "*";
+    }
+    echo "<br>";
 }
 
 
