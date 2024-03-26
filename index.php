@@ -920,7 +920,7 @@ while( $number40 < 10 ){
     $number40++;
 }
 
-echo "<h2> nested loop </h2> <br>";
+echo "<h2> for nested loop </h2> <br>";
 
 for( $i =1; $i< 10; $i++){
     echo $i."<br>";
@@ -930,7 +930,7 @@ for( $i =1; $i< 10; $i++){
     echo "<br>";
 }
 
-echo "<h2> nested loop </h2> <br>";
+echo "<h2> for nested loop </h2> <br>";
 
 for( $i =2; $i <= 10; $i +=1){
     for( $j =1; $j < 10 ; $j+=1 ){
@@ -939,7 +939,7 @@ for( $i =2; $i <= 10; $i +=1){
     echo "<br>";
 }
 
-echo "<h2> nested loop </h2> <br>";
+echo "<h2> for nested loop </h2> <br>";
 
 for( $i =1; $i <= 10; $i +=1){
     for( $j =1; $j < 10 ; $j+=1 ){
@@ -947,7 +947,7 @@ for( $i =1; $i <= 10; $i +=1){
     }
     echo "<br>";
 }
-echo "<h2> nested loop </h2> <br>";
+echo "<h2> for  nested loop </h2> <br>";
 
 for( $i = 1; $i <10; $i++ ){
     echo $i."<br>";
@@ -957,7 +957,7 @@ for( $i = 1; $i <10; $i++ ){
     echo "<br>";
 }
 
-echo "<h2> nested loop </h2> <br>";
+echo "<h2> for loop </h2> <br>";
 
 for( $i = 1; $i <10; $i++ ){
     // echo $i."<br>";
@@ -966,6 +966,51 @@ for( $i = 1; $i <10; $i++ ){
     }
     echo "<br>";
 }
+
+echo "<h2> while loop </h2> <br>";
+
+$i20 = 1;
+
+while( $i20 < 10 ){
+   echo $i20."<br>";
+   $i20++;
+   $j20 = 0;
+   while ( $j20 < $i20 ){
+    echo $j20;
+    $j20++;
+   }
+   echo "<br>";
+}
+
+echo "<h2> while loop </h2> <br>";
+
+$i20 = 1;
+
+while( $i20 < 10 ){
+//    echo $i20."<br>";
+   $i20++;
+   $j20 = 1;
+   while ( $j20 < $i20 ){
+    echo "A";
+    $j20++;
+   }
+   echo "<br>";
+}
+
+echo "<h2> do while loop </h2> <br>";
+
+$i30 = 1;
+
+do{
+    // echo $i30."<br>";
+    $i30++;
+    $j30 = 1;
+    do{
+        echo "*";
+        $j30++;
+    }while( $j30 < $i30 );
+    echo "<br>";
+}while( $i30 < 10 );
 
 
 exit;
