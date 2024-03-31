@@ -775,242 +775,267 @@
 
 // while loop
 
-echo "<h2> while loop </h2> <br>";
+// echo "<h2> while loop </h2> <br>";
 
-$i = 1;
+// $i = 1;
 
-while( $i < 10 ) :
-    $i++;
-  echo "*"."<br>";
+// while( $i < 10 ) :
+//     $i++;
+//   echo "*"."<br>";
 
     
-endwhile;
+// endwhile;
 
-echo "<h2> while loop even number </h2> <br>";
+// echo "<h2> while loop even number </h2> <br>";
 
-$even = 2;
+// $even = 2;
 
-while( $even < 20 ){
-    echo $even. "<br>";
+// while( $even < 20 ){
+//     echo $even. "<br>";
 
-    $even +=2;
-}
+//     $even +=2;
+// }
 
-echo "<h2> while loop odd number </h2> <br>";
+// echo "<h2> while loop odd number </h2> <br>";
 
-$odd = 1;
+// $odd = 1;
 
-while( $odd < 20 ){
-    echo $odd. "<br>";
+// while( $odd < 20 ){
+//     echo $odd. "<br>";
 
-    $odd +=2;
-}
+//     $odd +=2;
+// }
 
-echo "<h2> while loop break </h2> <br>";
+// echo "<h2> while loop break </h2> <br>";
 
-$break = 1;
+// $break = 1;
 
-while( $break < 10 ){
-    if( $break == 5 ) break;
-    echo $break."<br>";
-    $break++;
-}
+// while( $break < 10 ){
+//     if( $break == 5 ) break;
+//     echo $break."<br>";
+//     $break++;
+// }
 
-echo "<h2> while loop continue </h2> <br>";
+// echo "<h2> while loop continue </h2> <br>";
 
-$continue = 0;
+// $continue = 0;
 
-while( $continue < 10 ){
-    $continue++;
-    if( $continue == 3 ) continue;
-    if( $continue == 5 ) continue;
-    if( $continue == 8 ) continue;
-    echo $continue."<br>";
-}
+// while( $continue < 10 ){
+//     $continue++;
+//     if( $continue == 3 ) continue;
+//     if( $continue == 5 ) continue;
+//     if( $continue == 8 ) continue;
+//     echo $continue."<br>";
+// }
 
-echo "<h2> do while loop </h2> <br>";
+// echo "<h2> do while loop </h2> <br>";
 
-$i2 = 1;
+// $i2 = 1;
 
-do{
-    echo $i2."<br>";
-    $i2++;
-}while( $i2 < 10 );
-
-
-echo "<h2> do while loop break </h2> <br>";
-
-$i3 = 1;
-
-do{
-    if( $i3 == 4 ) break;
-    echo $i3. "<br>";
-    $i3++;
-}while( $i3 < 10 );
-
-echo "<h2> do while loop continue </h2> <br>";
-
-$i4 = 0;
-
-do{
-    $i4++;
-    if( $i4 == 4 ) continue;
-    if( $i4 == 7 ) continue;
-    echo $i4."<br>";
-}while( $i4 < 10 );
+// do{
+//     echo $i2."<br>";
+//     $i2++;
+// }while( $i2 < 10 );
 
 
-echo "<h2> string </h2> <br>";
+// echo "<h2> do while loop break </h2> <br>";
 
-$even2 = 1;
+// $i3 = 1;
 
-while( $even2 < 20 ){
-    if( $even2 % 2 == 0 ){
-        echo $even2."<br>";
-    }
-    $even2++;
-}
+// do{
+//     if( $i3 == 4 ) break;
+//     echo $i3. "<br>";
+//     $i3++;
+// }while( $i3 < 10 );
 
-echo "<h2> 3A </h2> <br>";
+// echo "<h2> do while loop continue </h2> <br>";
 
-$number20 = 1;
+// $i4 = 0;
 
-while( $number20 < 50 ){
-    echo $number20."<br>";
-    if( $number20 % 3 == 0 ){
-        echo "A";
-    }
-    $number20++;
-}
+// do{
+//     $i4++;
+//     if( $i4 == 4 ) continue;
+//     if( $i4 == 7 ) continue;
+//     echo $i4."<br>";
+// }while( $i4 < 10 );
 
-// for loop
-echo "<h2> for loop </h2> <br>";
 
-echo "<h2> even </h2> <br>";
+// echo "<h2> string </h2> <br>";
 
-for( $i = 0; $i < 20; $i+=2){
-    echo $i."<br>";
-}
+// $even2 = 1;
 
-echo "<h2> odd </h2> <br>";
+// while( $even2 < 20 ){
+//     if( $even2 % 2 == 0 ){
+//         echo $even2."<br>";
+//     }
+//     $even2++;
+// }
 
-for( $i = 0; $i < 20 ; $i++ ){
-    if( $i % 2 != 0 ){
-        echo $i."<br>";
-    }
-}
+// echo "<h2> 3A </h2> <br>";
 
-//  do while
-echo "<h2> Do while loop </h2> <br>";
+// $number20 = 1;
 
-$number30 = 0;
-do{
-    if( $number30 % 2 != 0 ){
-        echo $number30."<br>";
-    }
-    $number30++;
-}while( $number30 < 20 );
+// while( $number20 < 50 ){
+//     echo $number20."<br>";
+//     if( $number20 % 3 == 0 ){
+//         echo "A";
+//     }
+//     $number20++;
+// }
 
-echo "<h2> while loop </h2> <br>";
+// // for loop
+// echo "<h2> for loop </h2> <br>";
 
-$number40 = 0;
+// echo "<h2> even </h2> <br>";
 
-while( $number40 < 10 ){
-    echo "*"."<br>";
-    $number40++;
-}
+// for( $i = 0; $i < 20; $i+=2){
+//     echo $i."<br>";
+// }
 
-echo "<h2> for nested loop </h2> <br>";
+// echo "<h2> odd </h2> <br>";
 
-for( $i =1; $i< 10; $i++){
-    echo $i."<br>";
-    for($j = 1; $j < 3; $j++ ){
-        echo $j;
-    }
-    echo "<br>";
-}
+// for( $i = 0; $i < 20 ; $i++ ){
+//     if( $i % 2 != 0 ){
+//         echo $i."<br>";
+//     }
+// }
 
-echo "<h2> for nested loop </h2> <br>";
+// //  do while
+// echo "<h2> Do while loop </h2> <br>";
 
-for( $i =2; $i <= 10; $i +=1){
-    for( $j =1; $j < 10 ; $j+=1 ){
-        echo $j." ";
-    }
-    echo "<br>";
-}
+// $number30 = 0;
+// do{
+//     if( $number30 % 2 != 0 ){
+//         echo $number30."<br>";
+//     }
+//     $number30++;
+// }while( $number30 < 20 );
 
-echo "<h2> for nested loop </h2> <br>";
+// echo "<h2> while loop </h2> <br>";
 
-for( $i =1; $i <= 10; $i +=1){
-    for( $j =1; $j < 10 ; $j+=1 ){
-        echo "[ ".$i * $j."] ";
-    }
-    echo "<br>";
-}
-echo "<h2> for  nested loop </h2> <br>";
+// $number40 = 0;
 
-for( $i = 1; $i <10; $i++ ){
-    echo $i."<br>";
-    for( $j =0; $j < $i; $j++ ){
-        echo "A";
-    }
-    echo "<br>";
-}
+// while( $number40 < 10 ){
+//     echo "*"."<br>";
+//     $number40++;
+// }
 
-echo "<h2> for loop </h2> <br>";
+// echo "<h2> for nested loop asrhggjkwr</h2> <br>";
 
-for( $i = 1; $i <10; $i++ ){
-    // echo $i."<br>";
-    for( $j =0; $j < $i; $j++ ){
-        echo "*";
-    }
-    echo "<br>";
-}
+// for( $i =1; $i< 10; $i++){
+//     // echo $i."<br>";
+//     for($j = 1; $j < 10; $j++ ){
+//         echo $i * $j;
+//     }
+//     echo "<br>";
+// }
 
-echo "<h2> while loop </h2> <br>";
+// echo "<h2> for nested loop </h2> <br>";
 
-$i20 = 1;
+// for( $i =2; $i <= 10; $i +=1){
+//     for( $j =1; $j < 10 ; $j+=1 ){
+//         echo $j." ";
+//     }
+//     echo "<br>";
+// }
 
-while( $i20 < 10 ){
-   echo $i20."<br>";
-   $i20++;
-   $j20 = 0;
-   while ( $j20 < $i20 ){
-    echo $j20;
-    $j20++;
-   }
-   echo "<br>";
-}
+// echo "<h2> for nested loop </h2> <br>";
 
-echo "<h2> while loop </h2> <br>";
+// for( $i =1; $i <= 10; $i +=1){
+//     for( $j =1; $j < 10 ; $j+=1 ){
+//         echo "[ ".$i * $j."] ";
+//     }
+//     echo "<br>";
+// }
+// echo "<h2> for  nested loop </h2> <br>";
 
-$i20 = 1;
+// for( $i = 1; $i <10; $i++ ){
+//     echo $i."<br>";
+//     for( $j =0; $j < $i; $j++ ){
+//         echo "A";
+//     }
+//     echo "<br>";
+// }
 
-while( $i20 < 10 ){
+// echo "<h2> for loop </h2> <br>";
+
+// for( $i = 1; $i <10; $i++ ){
+//     // echo $i."<br>";
+//     for( $j =0; $j < $i; $j++ ){
+//         echo "*";
+//     }
+//     echo "<br>";
+// }
+
+// echo "<h2> while loop </h2> <br>";
+
+// $i20 = 1;
+
+// while( $i20 < 10 ){
 //    echo $i20."<br>";
-   $i20++;
-   $j20 = 1;
-   while ( $j20 < $i20 ){
-    echo "A";
-    $j20++;
-   }
-   echo "<br>";
+//    $i20++;
+//    $j20 = 0;
+//    while ( $j20 < $i20 ){
+//     echo $j20;
+//     $j20++;
+//    }
+//    echo "<br>";
+// }
+
+// echo "<h2> while loop </h2> <br>";
+
+// $i20 = 1;
+
+// while( $i20 < 10 ){
+// //    echo $i20."<br>";
+//    $i20++;
+//    $j20 = 1;
+//    while ( $j20 < $i20 ){
+//     echo "A";
+//     $j20++;
+//    }
+//    echo "<br>";
+// }
+
+// echo "<h2> do while loop </h2> <br>";
+
+// $i30 = 1;
+
+// do{
+//     // echo $i30."<br>";
+//     $i30++;
+//     $j30 = 1;
+//     do{
+//         echo "*";
+//         $j30++;
+//     }while( $j30 < $i30 );
+//     echo "<br>";
+// }while( $i30 < 10 );
+
+echo "<h2> array </h2> <br>";
+
+$students = [ "Akash", "Nur", 123, "Rajendro" ];
+
+// var_dump($students);
+// print_r($students);
+
+// array_unshift (  first element add )
+// array_push (  last element add )
+// array_shift (  first element remove )
+// array_pop (  last element remove )
+
+// $students[] = "jamal";
+// array_push( $students, "Kamal" );
+// array_unshift( $students, "salam" );
+
+array_shift($students);
+array_pop($students);
+
+
+$n = count($students);
+for( $i = 0; $i<$n; $i++ ){
+    echo $students[$i]."<br>";
 }
-
-echo "<h2> do while loop </h2> <br>";
-
-$i30 = 1;
-
-do{
-    // echo $i30."<br>";
-    $i30++;
-    $j30 = 1;
-    do{
-        echo "*";
-        $j30++;
-    }while( $j30 < $i30 );
-    echo "<br>";
-}while( $i30 < 10 );
 
 
 exit;
