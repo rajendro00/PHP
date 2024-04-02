@@ -1014,7 +1014,7 @@
 
 echo "<h2> array </h2> <br>";
 
-$students = [ "Akash", "Nur", 123, "Rajendro" ];
+// $students = [ "Akash", "Nur", 123, "Rajendro" ];
 
 // var_dump($students);
 // print_r($students);
@@ -1028,14 +1028,187 @@ $students = [ "Akash", "Nur", 123, "Rajendro" ];
 // array_push( $students, "Kamal" );
 // array_unshift( $students, "salam" );
 
-array_shift($students);
-array_pop($students);
+// array_shift($students);
+// array_pop($students);
 
 
-$n = count($students);
-for( $i = 0; $i<$n; $i++ ){
-    echo $students[$i]."<br>";
+// $n = count($students);
+// for( $i = 0; $i<$n; $i++ ){
+//     echo $students[$i]."<br>";
+// }
+
+$cars = array("Volvo", "BMW", "Toyota", "Honda", "Yahamaha", "Suzuki");
+
+$result = array_slice( $cars, -4,-2, true);
+
+print_r($cars);
+echo "<br>";
+
+print_r($result);
+
+echo "<br>";
+
+$assoArray = [ "a"=>12,  "b"=>30, "f"=>60, "h"=>70, "g"=>90, 12=>78, "f"=>100,];
+
+$assResult = array_slice( $assoArray, 2, null, true);
+
+print_r($assoArray);
+
+echo "<br>";
+
+$cars1 = array("Volvo", "BMW", "Toyota", "Honda", "Yahamaha", "Suzuki");
+
+$arrSplice = array_splice( $cars1, 1, 2 );
+
+print_r($cars1);
+echo "<br>";
+print_r($arrSplice);
+
+ echo "<br>";
+
+ $cars2 = array("Volvo", "BMW", "Toyota", "Honda", "Yahamaha", "Suzuki");
+  unset($cars2[2]);
+ print_r($cars2);
+
+ echo "<br>";
+
+ $cars3 = array("a"=>12,  "b"=>30, "f"=>60, "h"=>70, "g"=>90, 12=>78, "m"=>100,);
+
+//  sort( $cars3);
+//  asort( $cars3);
+ ksort( $cars3);
+
+ print_r($cars3);
+
+ echo "<br>";
+
+//  array within array
+
+// $arrayWithin = [ "Akash", "Nur", ["Rajendro"] ];
+$arrayWithin = [ "name1"=>"Akash", "name2"=>"Nur", "name3"=>["name31"=>"Rajendro Kundu"] ];
+
+// echo $arrayWithin["name3"]["name31"];
+
+foreach ($arrayWithin as $name){
+//    echo "<pre>";
+//    print_r($name);
+//    echo "</pre>";
+//   echo $name;
+// if(  is_array($name)){
+//     echo $name['name31'];
+// }else{
+//     echo $name;
+// }
+
+if(  !is_array($name)){
+    echo $name;
+}else{
+    echo $name['name31'];
 }
+   
+}
+
+echo "<br>";
+
+$arrChangeKey = [
+    "A" => "Akash",
+    "B" => "Bkash",
+    "c" => "Chaina",
+    "D" => "David",
+];
+
+$change = array_change_key_case($arrChangeKey, CASE_UPPER);
+
+print_r($change);
+
+echo "<br>";
+
+$cars5 =array("Volvo","BMW","Toyota","Honda","Mercedes","Opel");
+
+print_r( array_chunk($cars5,2));
+
+echo "<br>";
+
+$colum = [
+    [
+        "id" => 4075,
+        "username" => "rajendro",
+        "cell" => "01706026559",
+    ],
+    [
+        "id" => 4076,
+        "username" => "nur",
+        "cell" => "01706026550",
+    ],
+    [
+        "id" => 4077,
+        "username" => "akash",
+        "cell" => "01706026557",
+    ],
+];
+
+print_r(array_column($colum, "username", "cell"));
+
+echo "<br>";
+
+$numbers = [ 1, "2", 3, 4, 5];
+
+if(  in_array(2, $numbers) ){
+    echo "defind number";
+}else{
+    "not defined number";
+}
+echo "<br>";
+
+$number2 = [ "A"=> "Akash", "B"=> "Bkash", "C"=> "Cat", "D"=> "Dog" ];
+
+if( array_key_exists( 'A', $number2) ){
+    echo "defined key";
+}else{
+    echo " not defined key";
+}
+echo "<br>";
+
+$number3 = [ "A"=> "Akash", "B"=> "Bkash", "C"=> "Cat", "D"=> "Dog" ];
+
+if( array_key_exists( 'A', $number2) ){
+    $number3 ["e"] = "Egg";
+    unset($number3['A']);
+}
+
+print_r($number3);
+
+echo "<br>";
+
+// result shit
+
+echo " <h2> Result Sheet </h2> ";
+
+$mark = [
+    "name" => "Akash",
+    "roll" => '100',
+    "bangla" => 80,
+    "english" => 70,
+    "math" => 75,
+];
+
+$result_grade = [
+    "A+" => 80-100,
+    "A" => 70-79,
+    "A-" => 60-69,
+    "B" => 50- 60,
+    "C" => 40- 49,
+    "D" => 33- 39,
+    "F" => 0-32,
+];
+
+function resultSheet($mark){
+    foreach( $mark as $name => $score){
+        echo $name."<br>";
+    }
+}
+resultSheet($mark,);
+
 
 
 exit;
