@@ -1037,59 +1037,59 @@ echo "<h2> array </h2> <br>";
 //     echo $students[$i]."<br>";
 // }
 
-$cars = array("Volvo", "BMW", "Toyota", "Honda", "Yahamaha", "Suzuki");
+// $cars = array("Volvo", "BMW", "Toyota", "Honda", "Yahamaha", "Suzuki");
 
-$result = array_slice( $cars, -4,-2, true);
+// $result = array_slice( $cars, -4,-2, true);
 
-print_r($cars);
-echo "<br>";
+// print_r($cars);
+// echo "<br>";
 
-print_r($result);
+// print_r($result);
 
-echo "<br>";
+// echo "<br>";
 
-$assoArray = [ "a"=>12,  "b"=>30, "f"=>60, "h"=>70, "g"=>90, 12=>78, "f"=>100,];
+// $assoArray = [ "a"=>12,  "b"=>30, "f"=>60, "h"=>70, "g"=>90, 12=>78, "f"=>100,];
 
-$assResult = array_slice( $assoArray, 2, null, true);
+// $assResult = array_slice( $assoArray, 2, null, true);
 
-print_r($assoArray);
+// print_r($assoArray);
 
-echo "<br>";
+// echo "<br>";
 
-$cars1 = array("Volvo", "BMW", "Toyota", "Honda", "Yahamaha", "Suzuki");
+// $cars1 = array("Volvo", "BMW", "Toyota", "Honda", "Yahamaha", "Suzuki");
 
-$arrSplice = array_splice( $cars1, 1, 2 );
+// $arrSplice = array_splice( $cars1, 1, 2 );
 
-print_r($cars1);
-echo "<br>";
-print_r($arrSplice);
+// print_r($cars1);
+// echo "<br>";
+// print_r($arrSplice);
 
- echo "<br>";
+//  echo "<br>";
 
- $cars2 = array("Volvo", "BMW", "Toyota", "Honda", "Yahamaha", "Suzuki");
-  unset($cars2[2]);
- print_r($cars2);
+//  $cars2 = array("Volvo", "BMW", "Toyota", "Honda", "Yahamaha", "Suzuki");
+//   unset($cars2[2]);
+//  print_r($cars2);
 
- echo "<br>";
+//  echo "<br>";
 
- $cars3 = array("a"=>12,  "b"=>30, "f"=>60, "h"=>70, "g"=>90, 12=>78, "m"=>100,);
+//  $cars3 = array("a"=>12,  "b"=>30, "f"=>60, "h"=>70, "g"=>90, 12=>78, "m"=>100,);
 
 //  sort( $cars3);
 //  asort( $cars3);
- ksort( $cars3);
+//  ksort( $cars3);
 
- print_r($cars3);
+//  print_r($cars3);
 
- echo "<br>";
+//  echo "<br>";
 
 //  array within array
 
 // $arrayWithin = [ "Akash", "Nur", ["Rajendro"] ];
-$arrayWithin = [ "name1"=>"Akash", "name2"=>"Nur", "name3"=>["name31"=>"Rajendro Kundu"] ];
+// $arrayWithin = [ "name1"=>"Akash", "name2"=>"Nur", "name3"=>["name31"=>"Rajendro Kundu"] ];
 
 // echo $arrayWithin["name3"]["name31"];
 
-foreach ($arrayWithin as $name){
+// foreach ($arrayWithin as $name){
 //    echo "<pre>";
 //    print_r($name);
 //    echo "</pre>";
@@ -1100,115 +1100,185 @@ foreach ($arrayWithin as $name){
 //     echo $name;
 // }
 
-if(  !is_array($name)){
-    echo $name;
-}else{
-    echo $name['name31'];
-}
+// if(  !is_array($name)){
+//     echo $name;
+// }else{
+//     echo $name['name31'];
+// }
    
-}
+// }
 
-echo "<br>";
+// echo "<br>";
 
-$arrChangeKey = [
-    "A" => "Akash",
-    "B" => "Bkash",
-    "c" => "Chaina",
-    "D" => "David",
-];
+// $arrChangeKey = [
+//     "A" => "Akash",
+//     "B" => "Bkash",
+//     "c" => "Chaina",
+//     "D" => "David",
+// ];
 
-$change = array_change_key_case($arrChangeKey, CASE_UPPER);
+// $change = array_change_key_case($arrChangeKey, CASE_UPPER);
 
-print_r($change);
+// print_r($change);
 
-echo "<br>";
+// echo "<br>";
 
-$cars5 =array("Volvo","BMW","Toyota","Honda","Mercedes","Opel");
+// $cars5 =array("Volvo","BMW","Toyota","Honda","Mercedes","Opel");
 
-print_r( array_chunk($cars5,2));
+// print_r( array_chunk($cars5,2));
 
-echo "<br>";
+// echo "<br>";
 
-$colum = [
-    [
-        "id" => 4075,
-        "username" => "rajendro",
-        "cell" => "01706026559",
-    ],
-    [
-        "id" => 4076,
-        "username" => "nur",
-        "cell" => "01706026550",
-    ],
-    [
-        "id" => 4077,
-        "username" => "akash",
-        "cell" => "01706026557",
-    ],
-];
+// $colum = [
+//     [
+//         "id" => 4075,
+//         "username" => "rajendro",
+//         "cell" => "01706026559",
+//     ],
+//     [
+//         "id" => 4076,
+//         "username" => "nur",
+//         "cell" => "01706026550",
+//     ],
+//     [
+//         "id" => 4077,
+//         "username" => "akash",
+//         "cell" => "01706026557",
+//     ],
+// ];
 
-print_r(array_column($colum, "username", "cell"));
+// print_r(array_column($colum, "username", "cell"));
 
-echo "<br>";
+// echo "<br>";
 
-$numbers = [ 1, "2", 3, 4, 5];
+// $numbers = [ 1, "2", 3, 4, 5];
 
-if(  in_array(2, $numbers) ){
-    echo "defind number";
-}else{
-    "not defined number";
-}
-echo "<br>";
+// if(  in_array(2, $numbers) ){
+//     echo "defind number";
+// }else{
+//     "not defined number";
+// }
+// echo "<br>";
 
-$number2 = [ "A"=> "Akash", "B"=> "Bkash", "C"=> "Cat", "D"=> "Dog" ];
+// $number2 = [ "A"=> "Akash", "B"=> "Bkash", "C"=> "Cat", "D"=> "Dog" ];
 
-if( array_key_exists( 'A', $number2) ){
-    echo "defined key";
-}else{
-    echo " not defined key";
-}
-echo "<br>";
+// if( array_key_exists( 'A', $number2) ){
+//     echo "defined key";
+// }else{
+//     echo " not defined key";
+// }
+// echo "<br>";
 
-$number3 = [ "A"=> "Akash", "B"=> "Bkash", "C"=> "Cat", "D"=> "Dog" ];
+// $number3 = [ "A"=> "Akash", "B"=> "Bkash", "C"=> "Cat", "D"=> "Dog" ];
 
-if( array_key_exists( 'A', $number2) ){
-    $number3 ["e"] = "Egg";
-    unset($number3['A']);
-}
+// if( array_key_exists( 'A', $number2) ){
+//     $number3 ["e"] = "Egg";
+//     unset($number3['A']);
+// }
 
-print_r($number3);
+// print_r($number3);
 
-echo "<br>";
+// echo "<br>";
 
-// result shit
+// // result shit
 
-echo " <h2> Result Sheet </h2> ";
+// echo " <h2> Result Sheet </h2> ";
 
-$mark = [
-    "name" => "Akash",
-    "roll" => '100',
-    "bangla" => 80,
-    "english" => 70,
-    "math" => 75,
-];
+// $mark = [
+//     "name" => "Akash",
+//     "roll" => '100',
+//     "bangla" => 80,
+//     "english" => 70,
+//     "math" => 75,
+// ];
 
-$result_grade = [
-    "A+" => 80-100,
-    "A" => 70-79,
-    "A-" => 60-69,
-    "B" => 50- 60,
-    "C" => 40- 49,
-    "D" => 33- 39,
-    "F" => 0-32,
-];
+// $result_grade = [
+//     "A+" => 80-100,
+//     "A" => 70-79,
+//     "A-" => 60-69,
+//     "B" => 50- 60,
+//     "C" => 40- 49,
+//     "D" => 33- 39,
+//     "F" => 0-32,
+// ];
 
-function resultSheet($mark){
-    foreach( $mark as $name => $score){
-        echo $name."<br>";
+// function resultSheet($mark){
+//     foreach( $mark as $name => $score){
+//         echo $name."<br>";
+//     }
+// }
+// resultSheet($mark,);
+
+echo " <h2> array_combine </h2> ";
+
+$names = [ "Rajen", "Akash", "Nur" ];
+
+$age = [ 22, 21, 23 ];
+
+$result = array_combine( $names, $age );
+
+print_r($result);
+
+echo " <h2> array_count_values </h2> ";
+
+$count = [ "Rajen", "Akash", "Nur", "Nur", "rajen", "nur", 2, "2" ];
+
+$count_values = array_count_values($count);
+
+print_r($count_values);
+
+echo " <h2> array_diff </h2> ";
+
+$a1 = [ "a"=>"Red", "h"=>"Green","k"=>"Blue","l"=>"Black", "m"=>"White" ];
+$b1 = [ "a"=>"Red", "g"=>"Green","h"=>"Blue","i"=>"Black", "j"=>"tomato" ];
+
+$c1 = array_diff($b1,$a1);
+print_r($c1);
+
+echo " <h2> array_diff_assoc </h2> ";
+
+
+$a3=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+$a4=array("a"=>"red","b"=>"green","c"=>"blue");
+
+$c2 = array_diff_assoc( $a3, $a4 );
+
+print_r($c2);
+
+echo " <h2> array_diff_key </h2> ";
+
+$a5=array("a"=>"red","b"=>"green","c"=>"blue");
+$a6=array("a"=>"red","c"=>"blue","d"=>"pink");
+
+$c3 = array_diff_key($a5, $a6);
+
+print_r($c3);
+
+echo " <h2> array_diff_key </h2> ";
+
+$a7=array("red","green","blue","yellow");
+$a8=array("red","green","blue");
+
+$c4=array_diff_key($a7,$a8);
+print_r($c4);
+
+echo " <h2> array_diff_uassoc </h2> ";
+
+function Compare( $a, $b ){
+    if( $a === $b ){
+        return 0; 
     }
+    return ( $a > $b )? 1: -1;
 }
-resultSheet($mark,);
 
+$a9=array("a"=>"red","b"=>"green","c"=>"aqua");
+$a10=array("d"=>"yellow","b"=>"green","e"=>"blue");
 
+$c5 = array_diff_uassoc( $a9, $a10, "Compare" );
 
+print_r($c5);
+
+?>
+
+v 
 exit;
