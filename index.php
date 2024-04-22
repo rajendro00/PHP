@@ -1278,7 +1278,5 @@ $c5 = array_diff_uassoc( $a9, $a10, "Compare" );
 
 print_r($c5);
 
-?>
 
-v 
 exit;
