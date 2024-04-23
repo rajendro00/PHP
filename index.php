@@ -1110,12 +1110,12 @@ echo "<h2> array </h2> <br>";
 
 // echo "<br>";
 
-// $arrChangeKey = [
-//     "A" => "Akash",
-//     "B" => "Bkash",
-//     "c" => "Chaina",
-//     "D" => "David",
-// ];
+    // $arrChangeKey = [
+    //     "A" => "Akash",
+    //     "B" => "Bkash",
+    //     "c" => "Chaina",
+    //     "D" => "David",
+    // ];
 
 // $change = array_change_key_case($arrChangeKey, CASE_UPPER);
 
